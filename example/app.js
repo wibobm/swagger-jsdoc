@@ -14,7 +14,7 @@ var swaggerJSDoc = require('../');
 var app = express();
 app.use(bodyParser.json()); // To support JSON-encoded bodies
 app.use(bodyParser.urlencoded({ // To support URL-encoded bodies
-  extended: true,
+  extended: true
 }));
 
 // Swagger definition
@@ -35,7 +35,7 @@ var options = {
   // Import swaggerDefinitions
   swaggerDefinition: swaggerDefinition,
   // Path to the API docs
-  apis: ['./example/routes*.js', './example/parameters.yaml'],
+  apis: ['./example/routes*.js', './example/parameters.yaml']
 };
 
 // Initialize swagger-jsdoc -> returns validated swagger spec in json format
